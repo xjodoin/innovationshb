@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/bootstrap-1.2.0.min.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        <script src="@{'/public/javascripts/jquery-1.5.2.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        #{get 'moreScripts' /}
+    </head>
+    <body style="padding-top: 50px;">
+    	
+    	<!-- Topbar
+    ================================================== -->
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="container">
+          <h3><a href="#">InnovationHB</a></h3>
+
+          <ul class="nav">
+            <li class="active"><a href="#masthead">Accueil</a></li>
+            <li><a href="#about">Qui nous sommes?</a></li>
+			<li><a href="#typography">Réalisations</a></li>
+			<li><a href="#typography">Demande de soummision</a></li>
+            <li><a href="#grid-system">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    	<div class="container">
+    
+        #{doLayout /}
+        
+        </div>
+    </body>
+</html>
